@@ -1,13 +1,209 @@
-<!DOCTYPE html>
-<html>
-<style>
-body{
-	font-family: monospace;
-}
-</style>
+<!doctype html>
+<!--
+		Credits:
+		Built using Sublime Text 3, Prepros and the powers of HTML5, SASS and jQuery.
+		Images are sourced from Unsplash.
+		Hand crafted with love by Raghav Kukreti.
+
+		
+
+		Much code. 
+		Such complex. 
+		So beauty. 
+		Wow.	
+-->
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+	<meta name = "description" content = "The online portal of Raghav Kukreti, freelance web developer and designer. Visit the site to learn more.">
+	<meta name="keywords" content="Raghav Kukreti, Raghav, Kukreti, web designer, web developer, developer, designer, HTML5, CSS3, SASS, jQuery, UI, UX, web, freelance, design, designer, develop, apps">
+	<title>Raghav Kukreti &middot; Web Developer and Designer</title>
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+	<script type = "text/javascript">
+	$(function() {
+		$('a[href*=#]:not([href=#])').click(function() {
+			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+				var target = $(this.hash);
+				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+				if (target.length) {
+					$('html,body').animate({
+						scrollTop: target.offset().top
+					}, 1000);
+					return false;
+				}
+			}
+		});
+	});
+	</script>
+</head>
 <body>
-<h1>Hello, there!</h1>
-<p>This is the future website of Raghav Kukreti</p>
-<p>I will add content some time later. </p>
+	<section class="main" id = "hero">
+		<div class="centered">	
+		<h1 class = "animated fadeIn">RaghavKukreti</h1>
+			<nav class = "animated fadeInUp">
+				<ul>
+					<li id="hehe"><a class="scroll" href="#about">About</a></li>
+					<li id="hehe"><a class="scroll" href="#work">Work</a></li>
+					<li id="hehe"><a class="scroll" href="#contact">Contact</a></li>
+<!-- 					<li id="hehe"><a href="articles/blog.html">Blog</a></li>
+ -->				</ul>
+			</nav>
+		</div>
+	</section>
+
+	<!-- <section class="blog animated fadeIn">
+		<article>
+			<h1>Flat Design : An Overview</h1>
+			<h3 class="date">01/05/14 by Raghav Kukreti</h3>
+			<div class="sm-div"></div>
+			<p class="lead">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae minus delectus rem asperiores harum perspiciatis aliquid iste a. Similique, quasi quisquam commodi molestiae consectetur quibusdam distinctio molestias nulla dolorem esse. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, quo, modi, animi magnam unde deserunt expedita natus reprehenderit ad pariatur ex eius consequatur! Vel, ipsum sint harum quisquam cum delectus.
+			</p>			<p class="lead">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae minus delectus rem asperiores harum perspiciatis aliquid iste a. Similique... <a href="articles/flat.html" class="button">Continue</a>
+		</article>
+
+		<br>
+		<br>
+		<br>
+		<br>
+		<article>
+			<h1>responsive web design</h1>
+			<h3 class="date">23/02/14 by Raghav Kukreti</h3>
+			<div class="sm-div"></div>
+			<p class="lead">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae minus delectus rem asperiores harum perspiciatis aliquid iste a. Similique, quasi quisquam commodi molestiae consectetur quibusdam distinctio molestias nulla dolorem esse. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, quo, modi, animi magnam unde deserunt expedita natus reprehenderit ad pariatur ex eius consequatur! Vel, ipsum sint harum quisquam cum delectus.
+			</p>			
+			<p class="lead">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae minus delectus rem asperiores harum perspiciatis aliquid iste a. Similique... <a href="articles/typo.html" class="button">Continue</a>
+				</p>
+		</article>
+			<hr>
+	</section>
+ -->
+	<section class="blog animated fadeIn" id = "about">
+		<article>
+			<h1>About</h1>
+			<p class="lead">
+				Hello, my name is Raghav Kukreti and I am a freelance web developer and designer. I specialise in creating simple, elegant and responsive websites using scalable and robust technologies such as HTML5, CSS3 and a sprinkle of jQuery. I also do branding. 
+				See my <a href="#work">Work</a>.
+			</p>
+			<p class="lead">
+				If you are in need of my services, you can <a href="#contact">Contact</a> me and I will try to whip up something great for you!
+			</p>
+		</article>
+	</section>
+	<section class="blog animated fadeIn" id = "work">
+		<article>
+			<h1>My Work</h1>
+			<h3 class="date">Some of the stuff I made</h3>
+			<div class="sm-div"></div>	
+			<p class="lead">
+				<!-- <div class="work-wrap">
+					<div class="img1 work"></div>
+					<h2 class="proj-h">All Things Natural and Nice</h2>
+					<h3 class="date">Responsive, Blog &amp; Typography</h3>
+					<p class="lead">
+						A DIY website I made for my father. It was built using HTML5, CSS3, jQuery and PHP.
+						It contains articles ranging from how to make shampoos to how to cook perfect chicken.
+						Images are sourced from Unsplash and it uses a simple colour pallete.
+					</p>
+					<p class="lead">
+						It is still in private alpha and will be released soon.
+
+					</p>
+				</div>
+ -->
+
+				<div class="work-wrap">
+					<div class="img1 work"></div>
+					<h2 class="proj-h">Cle.an</h2>
+					<h3 class="date">Responsive, Framework &amp; Typography</h3>
+					<p class="lead">
+						This is a frameworvk  which I made to assist in front-end web design. It has a flat color pallete, responsive images and simple type. It was built using the powers of SASS and HTML5, keeping in mind to provide the user with a hassle free coding experience. 
+					</p>
+					<p class="lead">
+						Check out the code at <a href="https://github.com/raghav-kukreti/clean">GitHub</a>
+					</p>
+				</div>
+
+
+<!-- 
+				<div class="work-wrap">
+					<div class="img3 work"></div>
+					<h2 class="proj-h">HIGHWAY : Devil Breeze</h2>
+					<h3 class="date">Responsive, Product &amp; Typography</h3>
+					<p class="lead">
+						A website I made for HIGHWAY : Devil Breeze a fictional energy drink whose logo was made by <a href="#">Mayank Choudhary</a>. All images were sourced from Unsplash and the site was made using SASS and HTML5.
+						It uses flat, sharp colors and is fully responsive.
+					</p>
+				</div> -->
+
+				<div class="work-wrap">
+					<div class="img4 work"></div>
+					<h2 class="proj-h">Inkspire</h2>
+					<h3 class="date">Responsive, Website &amp; Flat</h3>
+					<p class="lead">
+						This is te website for a graphic oriented magazine, Inkspire. The colours are flat and it follows a responsive baseline.
+					</p>
+					<p class="lead">
+						<a href="http://inkspire.co" target="_blank">Launch</a> the website
+					</p>
+				</div>
+			<!-- 	<p class="lead">
+					<center><a href="#" class="beautybutton">View Full Portfolio</a></center>	
+				</p>	 -->
+				<p class="lead" style=" padding: 1rem 0; margin: 0;">
+					<center><h2 style="	color: #f35;">More in progress! </h2><div class="sm-div"></div></center>
+				</p>			
+			</p>
+		</article>
+	</section>
+<!-- 
+	<section class="blog animated fadeIn">
+		<article>
+			<h1>Achievments</h1>
+			<h3 class="date">Honours</h3>
+			<div class="sm-div"></div>
+			<p class="lead">
+				<ul>
+					<li>1<sup>st</sup> Position : Creative Event (EXUN, DPS R.K Puram)</li>
+					<li>2<sup>nd</sup> Position : Digital Imaging (Modern School, Vasant Vihar)</li>
+					<li>3<sup>rd</sup> Position: Creative Event (NEXUS, DPS Greater Noida)</li>
+					<li>&quot;Best Color Scheme&quot; : Camp K12, Web Designing</li>
+				</ul>			
+			</p>
+
+		</article>
+	</section> -->
+
+	<section class="blog animated fadeIn" id = "contact">
+		<article>
+			<h1>Contact Me</h1>
+			<h3 class="date">Get in touch</h3>
+			<div class="sm-div"></div>
+			<p class="lead">
+
+				I am quite active on social media, so use any of the means below <br><br>
+				<a href="https://www.facebook.com/raghav.kukreti7"><i class="fa fa-facebook-square"></i></a>&nbsp;&nbsp;&nbsp;
+				<a href="https://www.twitter.com/RaghavKukreti"><i class="fa fa-twitter-square"></i></a>&nbsp;&nbsp;&nbsp;
+				<a href="mailto:raghav.kukreti@gmail.com"><i class="fa fa-envelope-o"></i></a>&nbsp;&nbsp;&nbsp;
+				<a href="http://instagram.com/raghav_kukreti"><i class="fa fa-instagram"></i></a>&nbsp;&nbsp;&nbsp;
+
+			</p>
+				<div class="end">§</div>
+
+
+		</article>
+	</section>
+		
+
+	<script src = "js/smoothscroll.js"></script>
+	<script src = "js/jquery.js"></script>
+	
+<script>
+	$('#hehe a').smoothScroll();
+</script>
+
 </body>
 </html>
