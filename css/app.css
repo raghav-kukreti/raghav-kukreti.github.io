@@ -526,7 +526,7 @@ p.lead {
 }
 
 .blog .img2 {
-  background: url(../img/clean.png) left no-repeat;
+  background: url(../img/clean.PNG) left no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
   float: right;
