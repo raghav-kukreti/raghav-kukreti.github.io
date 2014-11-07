@@ -1,6 +1,6 @@
 
- Yo Money Singh
- #####Camp K12 Website Design Entry Submission
+ # Yo Money Singh
+ ## Camp K12 Website Design Entry Submission
  This is my entry for the website design competiton conducted by Camp K12.
  I have chosen the topic : __Yo Yo Money Singh__
 
