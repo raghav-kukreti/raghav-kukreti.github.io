@@ -17,15 +17,15 @@ I chose Yo Yo Money Singh as my topic because it was the only one which was out 
 5. Blog with one page
 6. Mock form interactions.
 7. *Bonus*
-	i. Custom album art
-	ii. Custom persona of Money Singh 
+	* Custom album art
+	* Custom persona of Money Singh 
 
  ## Languages Used
  I have used HTML5, CSS3 and jQuery. I wrote the HTML markup from scratch but for the CSS and JavaScript I used preprocessors. CSS was compiled from Sass and the jQuery from Coffeescript.
  All of this was done through the magic of Prepros.
 
  ## Detailed Inspection
- Making the website wasn't a simple process especially from scratch and without the help of any framework and lack of grid systems made it a daunting task. I first sketched out the basic idea on a sheet of paper and built the first version on top of that. It went through a lot of versions and style changes. Let's start with the markup.
+I first sketched out the basic idea on a sheet of paper and built the first version on top of that. It went through a lot of versions and style changes. Let's start with the markup.
 
  #### HTML
  The HTML is pretty straight forward and having commented heavily, the markup would be easy to read.
@@ -39,9 +39,9 @@ I chose Yo Yo Money Singh as my topic because it was the only one which was out 
  One is the Menu Bar functionality, the Music player and the onscroll animation.
  ##### Menu
  The menu first sets the menu visibility to false as a variable. Then it adds CSS styles to the `li` ie, `animation-delay`.
- Then, it listens for the `onClick()` event on the menu button and when clicked it gives it the CSS style of `left:0px;` else, it gives it the default position which is -200px.
+ Then, it listens for the `onClick()` event on the menu button and when clicked it gives it the CSS style of `left:0px;` else, it gives it the default position which is `-200px.`
  ##### Music Player
- The music player was just a simple idea to provide a sample of ***Money's*** songs but it is an integral part of the website.
+ The music player was just a simple idea to provide a sample of Money's songs but it is an integral part of the website.
  The music player too works on the system of heights and background positions. But nevertheless, here are the specifics.
  The first block of code is the hide/show functionality. It checks if the audio player has a class of invisible or not then adds the css styles for increasing the height of the player.
  Functionality : I create a variable called audio and gave it a new Audio() object.
