@@ -32,7 +32,7 @@ ii. Custom persona of Money Singh
  The HTML is pretty straight forward and doesn't require a lot of explanation. I have commented heavily and that should sum things up.
 
  #### CSS
- CSS was compiled through SASS (The libsass compiler was used). It first goes through the whole process of normalizing the website (Using [normalize.css](necolas.github.io/normalize.css/)) and then the main styles come into play. The variables have been defined at the top of the stylesheet and have been used throughout the web page. I would advise you ***not*** to view the raw CSS which has been compiled to a nested form and is hard to read. 
+ CSS was compiled through SASS (The libsass compiler was used). It first goes through the whole process of normalizing the website (Using [normalize.css](http://necolas.github.io/normalize.css/)) and then the main styles come into play. The variables have been defined at the top of the stylesheet and have been used throughout the web page. I would advise you ***not*** to view the raw CSS which has been compiled to a nested form and is hard to read. 
 
  #### JavaScript
  The JavaScript is written by me expect for the smoothscroll script. Which starts on `line 295` of the index.html.
@@ -66,4 +66,4 @@ ii. Custom persona of Money Singh
  I have made six album covers and included the PSD for the same.
  They have been used in the website.
 
- Running the website on a server such as that of [Prepros](www.alphapixels.com/prepros) is appreciated to provide the best experience but viewing it by double clicking is fine. 
+ Running the website on a server such as that of [Prepros](http://www.alphapixels.com/prepros) is appreciated to provide the best experience but viewing it by double clicking is fine. 
