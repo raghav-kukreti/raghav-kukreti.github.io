@@ -4,13 +4,27 @@
  This is my entry for the website design competiton conducted by Camp K12.
  I have chosen the topic : __Yo Yo Money Singh__
 
+
+
  1. Overview
- 2. Languages Used
- 3. Detailed Inspection
- 4. Miscellaneous Aspects
+	2. Features
+ 3. Languages Used
+ 4. Detailed Inspection
+ 5. Miscellaneous Aspects
 
  ## Overview
  I chose Yo Yo Money Singh as my topic because it was the only one which was both out of the box and could be worked upon with a plethora of ideas. I have gone for a minimalist theme with dark, cool (cool as in the shade cool) colours. The primary colour is a strain of blue which looks perfect on black and the basic theme is black (#040404).
+	
+	##Features
+	1. Animated scroll
+	2. Custom Scrollbar
+	3. Animated menu
+	4. Fully functional music player.
+	5. Blog with one page
+	6. Mock form interactions.
+	7. *Bonus*
+					i. Custom album art
+					ii. Custom persona of Money Singh 
 
  ## Languages Used
  I have used HTML5, CSS3 and jQuery. I wrote the HTML markup from scratch but for the CSS and JavaScript I used preprocessors. CSS was compiled from Sass and the jQuery from Coffeescript.
