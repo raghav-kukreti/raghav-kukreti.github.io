@@ -43,27 +43,10 @@ I first sketched out the basic idea on a sheet of paper and built the first vers
  Then, it listens for the `onClick()` event on the menu button and when clicked it gives it the CSS style of `left:0px;` else, it gives it the default position which is `-200px.`
  ##### Music Player
  The music player was just a simple idea to provide a sample of Money's songs but it is an integral part of the website.
- The music player too works on the system of heights and background positions. But nevertheless, here are the specifics.
- The first block of code is the hide/show functionality. It checks if the audio player has a class of invisible or not then adds the css styles for increasing the height of the player.
- Functionality : I create a variable called audio and gave it a new Audio() object.
- Let's look at the code for a better understanding
-
- ` audio.src = $('#music-wrapper li.current').data('src');`
-
- `audio.controls = false;`
-
- `audio.loop = false;`
-
- `audio.autoplay = false;`
-
- The first line specifies the source file of the song through the `data-src` attribute. Second one, disables the default controls, third stops the loop and last one doesn't allow autoplay.
-
- The next block loads the songs and plays them when it hears a click event on play.
- The pause and play buttons change their states accordingly.
-
+ The music player too works on the system of heights and background positions. 
 
  ## Miscellaneous
  I have made six album covers and included the PSD for the same.
  They have been used in the website.
 
- Running the website on a server such as that of [Prepros](http://www.alphapixels.com/prepros) is appreciated to provide the best experience but viewing it by double clicking is fine. 
+ Running the website on a server such as that of [Prepros](http://www.alphapixels.com/prepros) is appreciated to provide the best experience but viewing it by double clicking is fine too. 
