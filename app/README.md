@@ -32,7 +32,7 @@ I first sketched out the basic idea on a sheet of paper and built the first vers
  The HTML is pretty straight forward and having commented heavily, the markup would be easy to read.
 
  #### CSS
- CSS was compiled through SASS (The libsass compiler was used). It first goes through the whole process of normalizing the website (Using [normalize.css](http://necolas.github.io/normalize.css/)) and then the main styles come into play. The variables have been defined at the top of the stylesheet and have been used throughout the web page. I would advise you ***not*** to view the raw CSS which has been compiled to a compressed form and is hard to read. 
+ CSS was compiled through SASS (The libsass compiler was used). It first goes through the whole process of normalizing the website (Using [normalize.css](http://necolas.github.io/normalize.css/)) and then the main styles come into play. The variables have been defined at the top of the stylesheet and have been used throughout the web page. 
 
  #### JavaScript
  The JavaScript is written by me expect for the smoothscroll script. Which starts on `line 295` of the index.html.
