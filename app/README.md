@@ -6,6 +6,7 @@
  3. Languages Used
  4. Detailed Inspection
  5. Miscellaneous Aspects
+ 
  ## Overview
 I chose Yo Yo Money Singh as my topic because it was the only one which was out of the box. I have gone for a minimalist theme with dark, cool colours. Primary colour is light blue -> `rgba(81, 187, 255, 1)` and the background is black -> `#040404`
 
