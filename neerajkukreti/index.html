@@ -99,21 +99,23 @@
         <div class="modal contact--modal">
             <h2>GET IN TOUCH</h2>
             <p class="copy-text">
-                Fill up this form and we will get back.
+                <!-- Fill up this form and we will get back. -->
             </p>
             <p class="copy-text">
-                <form action="//formspree.io/raghav.kukreti@gmail.com" method="POST">
+                <form action="//formspree.io/you@email.com" method="POST">
                     <input type="text" name="name" required spellcheck="false" placeholder="Your name">
                     <input type="email" name="_replyto" required spellcheck="false" placeholder="E-mail address">
-                    <textarea name="message" id="" cols="30" rows="10" required placeholder="Hi, I'd like to jump start my project..."></textarea>
+                    <div class="col">
+                        <input type="text" placeholder="Designation" name="designation" required spellcheck="false">
+                        <input type="text" placeholder="Organization"name="org" required spellcheck="false">
+                    </div>
+                    <textarea name="message" id="" cols="30" rows="10" required placeholder="Hi, I'd like you to jump start my project..."></textarea>
                     <input type="submit" value="Send">
+
                     <input type="hidden" name="_next" value="#0" />
                     <input type="text" name="_gotcha" style="display:none" />
                 </form>
-            </p>
-            <p class="modal--footer">
-                We hate spam. We never spam. Ever.
-            </p>
+
         </div>
         <div id="plus-sign" class="contact animated infinite pulse">
         </div>

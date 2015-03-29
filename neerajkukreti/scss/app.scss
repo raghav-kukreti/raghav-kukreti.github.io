@@ -529,6 +529,7 @@ form {
         border: 3px solid #444;
         &:focus, &:active {
             outline: none;
+            border:   3px solid #222;
         }
     }
     input {
@@ -577,4 +578,14 @@ form {
 .pulse {
   -webkit-animation-name: pulse;
   animation-name: pulse;
+}
+
+.col {
+  input {
+    width: 49%; 
+    float: left;
+    &:nth-child(1){
+        margin-right:   10px;
+    }
+  }
 }
