@@ -8,20 +8,10 @@
 
 ::selection {
     background: #111;
-    color: #000;
+    color: #fff;
     text-decoration: none;
     box-shadow: none;
     text-shadow: none;
-}
-
-@font-face {
-    src: url(libb.ttf);
-    font-family: Liberation Bold;
-}
-
-@font-face {
-    src: url(libr.ttf);
-    font-family: Liberation Mono;
 }
 
 html,
@@ -32,38 +22,31 @@ body {
 body {
     display: table;
     width: 100%;
+    padding: 200px 300px;
     height: 100vh;
-    background: #000;
-    color: #fff;
-    font-family: Liberation Mono;
-}
-
-.centered {
-    display: table-cell;
-    vertical-align: middle;
-    padding-left: 100px;
+    background: #fff;
+    color: #444444;
+    font-family: Playfair Display;
 }
 
 h1 {
-    font-family: Dosis;
-    text-transform: uppercase;
-    margin-bottom: 10px;
+	font-size: 48px;
 }
 
-p.lead {
-    line-height: 1.56774328;
-}
-
-p>span {
-	text-decoration: line-through;
+h3 {
+	font-family: Source Sans Pro;
+	font-weight: normal;
+	line-height: 1.4;
+	font-size: 1.3rem;
 }
 
 a {
-    color: #fff;
-    &:hover, &:focus {
-        outline: none;
-        background: #fff;
-        color: #222;
-        text-decoration: none;
-    }
+	font-weight: bold;
+	color: #444;
+	text-decoration: none;
+
+	&:hover {
+		background: #444;
+		color: #fff;
+	} 
 }

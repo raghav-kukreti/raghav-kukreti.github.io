@@ -1,24 +1,35 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Raghav Kukreti</title>
-	<link rel="stylesheet" type="text/css" href="app.css">
-	<link href='http://fonts.googleapis.com/css?family=Dosis:700' rel='stylesheet' type='text/css'>
-</head>
-<body>
-<div class="centered">
-	<h1>_Raghav Kukreti</h1>
-	<p class="lead">
-		I am an interaction designer.
-		<br>
-		I make websites and play with Photoshop.
-		<br>
-		I know stuff like HTML5, CSS3, Sass, jQuery and <span>magic</span>.
-	</p>
 
-	<p class="lead">
-		Have a project in mind? Let&rsquo;s have <a href="mailto:raghav.kukreti@gmail.com">coffee</a>.
-	</p>
-</div> 
+<head>
+    <title>Raghav Kukreti</title>
+    <link rel="stylesheet" type="text/css" href="app.css">
+    <link href='http://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://rawgit.com/mikeflynn/egg.js/9d4e0518cf9db87f634b36df5ad805ab957dcac3/egg.min.js"></script>
+    <script type="text/javascript">
+    var egg = new Egg();
+    egg.addCode("up,up,down,down,left,right,left,right,b,a", function() {
+        $("body").css({
+            "background": "url(images.jpg)",
+            "font-family": "Comic Sans MS",
+            "color":"#fff"
+        });
+        $("h3").css("font-family", "Comic Sans MS");
+    }, "konami-code");
+    egg.addHook(function() {
+        console.log("Hook called for: " + this.activeEgg.keys);
+        console.log(this.activeEgg.metadata);
+    });
+    egg.listen();
+    </script>
+</head>
+
+<body>
+    <h1>I am Raghav Kukreti, a Delhi based digital designer.</h1>
+    <br>
+    <h3>I am currently a full time student and am available for freelance work. <br>Drop me a line at <a href="mailto:raghav.kukreti@gmail.com">raghav.kukreti[at]gmail.com</a>. Check out my <a href="#0">LinkedIn</a> profile, or <br>download <a href="https://www.behance.net/resumes/pdf?id=1074491">my CV</a>. My work is up on <a href="https://www.behance.net/raghavkukreti">Behance</a>.</h3>
 </body>
+
 </html>
