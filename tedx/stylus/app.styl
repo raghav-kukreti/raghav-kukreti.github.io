@@ -11,7 +11,7 @@ $font-stack = "ApercuRegular", Helvetica, Helvetica Neue, Arial, sans-serif;
 	transition all 0.35s ease-in-out
 	margin: 0;
 	padding: 0;
-	text-rendering optimizeLegibility
+	text-rendering geometricPrecision
 	
 	border: 0;
 	outline: 0;
@@ -41,7 +41,10 @@ body
 		
 		h1
 			font-size 4.8rem
+			color #fff
 			line-height 0.56
+			letter-spacing -.2px
+			font-family $font-stack
 			font-stretch ultra-expanded
 			.red
 				letter-spacing -2px
@@ -91,7 +94,7 @@ body
 
 .wrapper
 	display block
-	float left
+	// float left
 	width 100%
 	
 .central
@@ -194,6 +197,7 @@ ul.inline li {
 .menu-item > a
 	font-size: 18px;
 	color: #333332;
+	font-family $font-stack
 	padding-bottom 6px
 	text-transform: lowercase;
 	border-bottom 2px solid rgba($prim, 0)
@@ -227,31 +231,49 @@ ul.inline li {
 
 .tanmay
 	background url('../img/lol.jpg') center center no-repeat
-	height 400px
+	height 300px
 	opacity 0.77
 
 .sana
 	background url('../img/10.jpg') center center no-repeat
-	height 400px
+	height 300px
 	opacity 0.77
 
 .guy
 	background url('../img/m8.jpg') center center no-repeat
-	height 400px
+	height 300px
 	opacity 0.77
 	
 .lol
 	background url('../img/52.jpg') center center no-repeat
-	height 400px
+	height 300px
 	opacity 0.77
 
+footer
+	background #222
+	padding 50px
+	height 10vh
+	
+	.left
+		color #888
+		font-family monospace
+		a
+			color #999
+			padding-bottom 1px
+			border-bottom 1px solid rgba(#888,1)
+			
+			&:hover
+				color #888
+				padding-bottom 4px
 
 .organizers
+	height 135vh
 	h1
 		font-family $font-stack
 		font-size 3rem
 		padding 0 120px
 		padding-top 50px
+		padding-bottom 5px
 	h2
 		padding 0px 125px
 		
@@ -263,5 +285,5 @@ ul.inline li {
 			display: block;
 			content: "";
 			height: 3px;
-			margin: 10px 0px;
+			margin: 18px 0px;
 			width: 8.47039%;
