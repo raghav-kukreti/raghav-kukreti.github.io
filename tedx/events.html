@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TEDx Youth at D.P.S RK Puram</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700italic' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <nav class="main-nav" style="box-shadow: rgb(153, 153, 153) 0px 0px 0px 0px; height: 90px;">
+        <div class="inner">
+            <a href="../" class="wow fadeIn">
+                <figure class="logo">TEDxAmsterdam</figure>
+            </a>
+            <ul id="menu-main-menu" class="menu inline">
+                <li class="menu-item wow fadeInLeft" data-wow-delay="0.4s"><a href="../">home</a></li>
+                <li class="menu-item wow fadeInLeft" data-wow-delay="0.6s">
+                    <a href="events.html">events</a>
+                </li>
+                <li class="menu-item wow fadeInLeft" data-wow-delay="0.8s"><a href="talks.html">Talks</a></li>
+                <li class="menu-item wow fadeInLeft" data-wow-delay="1.1s"><a href="news.html">reports</a></li>
+                <li class="menu-item wow fadeInLeft" data-wow-delay="1.3s"><a href="program.html">Programs</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="main-content">
+        <!-- Wrapper -->
+        <div class="wrapper-new">
+            <section class="people float-left">
+                <header>
+                    <h1 class="main-header">Events</h1>
+                    <ul class="inline tabs">
+                        <li><a href="tedx2015.html">TEDx@DPSRKP 2015</a></li>
+                        <li><a href="tedx2014.html">TEDx@DPSRKP 2014</a></li>
+                        
+                    <p class="subheading">&nbsp;</p>
+                </header>
+                <article class="post">
+                    <p>TEDxYouth@DPSRKP is a yearly event. Find our&nbsp;yearly events archived here or check out the <a href="talks.html">talks</a> to be inspired by the amazing&nbsp;people that have stood on the TEDxYouth@DPSRKP stage. Alternatively, you can check out the <a href="program.html">program</a> for the 2015 event.</p>
+                </article>
+            </section>
+        </div>
+        <!-- /Wrapper -->
+    </section>
+    <section class="base-info">
+        <div class="inner">
+            <div class="base-about float-left">
+                <span class="header line-top">What is TEDx?</span>
+                <p>In the spirit of ideas worth spreading, TED has created a program called TEDx. TEDx is a program of self-organized events that bring people together to share a TED-like experience. At TEDxDPSRKP, live speakers will spark deep discussion and connection. The TED Conference provides general guidance for the TEDx program, but individual TEDx events are self-organised.</p>
+            </div>
+            <div class="social float-left">
+                <span class="header line-top">Find us on</span>
+                <ul>
+                    <li><a href="https://twitter.com/TEDxAms" title="Visit TEDxAmsterdam on Twitter">Twitter</a></li>
+                    <li><a href="https://www.facebook.com/TEDxAmsterdam" title="Visit TEDxAmsterdam on Facebook">Facebook</a></li>
+                    <li><a href="https://plus.google.com/+tedxamsterdam/" title="Visit TEDxAmsterdam on Google+">Google+</a></li>
+                    <li><a href="https://www.youtube.com/tedxams" title="Visit TEDxAmsterdam on YouTube">YouTube</a></li>
+                    <li><a href="http://www.flickr.com/photos/tedxamsterdam/sets/" title="Visit TEDxAmsterdam on Flickr">Flickr</a></li>
+                    <li><a href="http://pinterest.com/TEDxAmsterdamNL/" title="Visit TEDxAmsterdam on Pinterest">Pinterest</a></li>
+                </ul>
+                <!-- Todo, add ted links -->
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="left">
+            Designed and Developed by <a href="http://raghavkukreti.me" target="_blank">Raghav Kukreti</a>
+        </div>
+    </footer>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+    <script>
+    $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: target.offset().top
+                }, 500);
+                return false;
+            }
+        }
+    });
+    </script>
+</body>
+
+</html>
