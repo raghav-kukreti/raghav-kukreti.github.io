@@ -1,5 +1,10 @@
 # My Personal Portfolio
 
 ## This is my website.
-I tried to make this type based but as I authored this when I was not very proficient with type,
-*mistakes* were made.
+My personal portfolio coupled with unfinished projects and random stuff.
+Minimal and typographic.
+More or less lazy in nature.
+
+Try up, up, down, down, left, right, left, right, b, a
+
+### Konami
