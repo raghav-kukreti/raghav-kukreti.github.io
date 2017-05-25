@@ -1,0 +1,334 @@
+// Declaring variables
+
+$prim = "Playfair Display"
+
+*,
+*::after,
+*::before
+	box-sizing border-box
+	padding 0
+	margin 0
+	transition all .35s ease-in-out
+
+::-webkit-scrollbar-track {
+    background-color: #222;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    background: $prim-color;
+}
+::-webkit-scrollbar-thumb {
+    background-color: $prim-color;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(.5, rgba(255, 255, 255, .2)), color-stop(.5, transparent), to(transparent));
+}
+html
+	-webkit-font-smoothing antialiased
+	
+body
+	margin 0
+	padding 0
+	position relative
+	line-height 1.4	
+	text-rendering optimizeLegibility
+	font-family Raleway, sans-serif
+	background #fff
+	color #282828
+
+.hero
+	background url(../img/bg.jpg) center center no-repeat fixed
+	background-size cover
+	padding 20px
+	
+	color #fff;
+	height 100vh
+	display table
+	width 100%
+	.centered
+		display table-cell
+		vertical-align middle
+		text-align center
+		
+		h1
+			margin-bottom 0px;
+			font-size 4.2rem
+			display inline-block
+			position relative
+			letter-spacing .1rem
+			text-transform uppercase
+		
+			
+
+		h2
+			font-weight 400	
+
+
+.thin
+	font-weight: 200;
+	
+
+.text_block h1
+	font-size: 1.6em;
+	letter-spacing: 1px;
+	font-weight: bold;
+	margin: 0 0 1.6em 0;
+	font-family $prim
+	font-size 2rem
+	
+.text_block p
+	margin: 2.2em 0 0 0;
+	line-height 1.9
+	  
+.chakravyu
+	position: relative;
+	width: 100%;
+	padding: 7em 0 8em 0;
+	.left_aligned 
+		margin: 0 0 0 6%;
+	.text_block 
+		width: 100%;
+	.info 
+		width: 40%;
+		padding: 5em 0;
+		display: flex;
+			
+
+.contact
+	width: 100%;
+	padding: 7em 0 8em 0;
+	position relative
+	
+	
+		
+
+.drone {
+	position relative
+	float right
+	top -400px
+	width 23.33%
+	opacity 0.8
+}
+.drone2 {
+	position relative
+	float right
+	top -450px
+	right -30px;
+	width 13.33%
+}
+
+.button
+	text-transform uppercase
+	text-decoration none
+	font-weight 400
+	word-spacing 6px
+	position relative
+	letter-spacing 2px
+	background transparent
+	border 2px solid
+	color #222
+	padding 15px 40px 15px 20px
+	font-size 1.2rem
+	transition 0.35s all ease-in-out 
+	&:hover
+		background #222
+		color #fff
+		border 2px solid #222
+		
+.divider 
+	background-size cover
+	min-height 300px
+	display table
+	width 100%
+	
+	.centered
+		display table-cell
+		vertical-align middle
+		text-align center
+		h1
+			text-transform uppercase
+			color #fff
+
+.un {
+	background url(../img/deux.jpg) center center no-repeat fixed
+	background-size cover
+	
+}
+.quadcopter {
+	height 340px
+	width 340px
+	right 70px
+	top 850px;
+	position absolute
+	background url(../img/lol.png) center center no-repeat 
+	background-size cover
+	
+}
+
+.chakra
+	width: 100%;
+	padding: 7em 0 8em 0;
+	position: relative;
+
+.main {
+  width: 40%;
+  padding: 5em 0;
+  display: flex;
+  margin: 0 0 0 54%;
+}
+
+.text_block {
+  width: 100%;
+}
+
+.live {
+  padding: 0.8em 1.2em;
+  border: solid 2px #333;
+  color: #333;
+  font-size 1.1rem
+  text-decoration none
+  text-transform uppercase
+}
+
+.live:hover
+	background #333
+	color #fff
+
+.left
+	position absolute
+	left 100px
+	top 120px
+	width 500px
+	height 500px
+
+.right
+	position absolute
+	right 100px
+	top 120px
+	width 500px
+	height 500px
+
+.deux {
+	background url(../img/pow.jpg) top center no-repeat fixed
+	background-size cover}
+.tres {
+	background url(../img/wow.jpg) bottom center no-repeat fixed
+	background-size cover}	
+.sud
+	background url(../img/ss.png) center center no-repeat 
+	background-size cover
+.gunna
+	background url(../img/guns.png) center center no-repeat 
+	background-size cover
+.quad
+	background url(../img/lol.png) center center no-repeat 
+	background-size cover
+.dabba
+	background url(../img/dabba.png) center center no-repeat 
+	background-size cover
+.quatre
+	background url(../img/r.jpg) top center no-repeat fixed
+	background-size cover
+	
+.speed--slow
+	animation-duration 13s !important
+
+#nav-wrapper {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 50; }
+
+#nav-inner div {
+  border: 1px solid rgba(105, 105, 105, 0.5);
+  color: rgba(#fff, 0.8);
+  background: #111;
+  text-align: center;
+  padding: 17px;
+  height: 50px; }
+
+#nav-inner div, #nav-inner li {
+  width: 150px;
+  margin: 1px 0;
+  cursor: pointer; }
+
+#nav-inner ul {
+  overflow: hidden; }
+
+ol, ul {
+  list-style: none; }
+
+#nav-inner li {
+  -webkit-transition: left .2s;
+  transition: left .2s;
+  color: rgba(#fff, 0.9);
+  background: rgba(#000, 0.95);
+  position: relative;
+  font-weight: bold;
+  padding: 10px 17px;
+  height: 35px;
+  left: -150px; }
+  #nav-inner li a {
+    color: rgba(#fff, 0.9); }
+    #nav-inner li a:hover {
+      border: none; }
+
+#nav-inner div:hover, #nav-inner li:hover {
+  background: rgba(#666, 0.8);
+}
+
+a
+	text-decoration none
+
+
+.contact
+	height 100vh
+	margin 0
+	padding 0
+	background url(../img/lola.jpg) center center no-repeat fixed
+	background-size cover
+	display table
+	width 100%
+	.centered
+		height 100vh
+		background rgba(#000, 0.86)
+		display table-cell
+		vertical-align middle
+		text-align center
+		
+		h1
+			margin-bottom 40px
+			color #fff
+			// text-transform uppercase
+			font-size 2rem
+
+input
+	color #222
+	padding 20px 50px
+	background rgba(#fff, 0.8)
+	box-shadow 0px 6px 0 rgba(#fff, 0.33)
+	outline none
+	transition 0.35s background ease-in-out
+	position relative
+	
+	border 3px solid rgba(#fff, 0)
+	&:focus {
+		background rgba(#fff, 1)	
+	}
+	&:focus, &:active
+		top 3px
+		box-shadow 0px 3px 0 rgba(#fff, 0.33)
+input[type="submit"], input[type="email"]
+	font-size 1.2rem
+
+
+input[type="submit"]
+	background transparent
+	color #fff 
+	position relative
+	transition 0.35s background ease-in-out
+	border 3px solid #fff;
+	&:focus
+		box-shadow -3px 3px 0 rgba(#fff, 0.33) !important
+		
+	&:hover
+		background #fff
+		color #000
