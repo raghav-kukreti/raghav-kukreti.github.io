@@ -1,0 +1,61 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+    <!-- Basic Metadata -->
+    <meta charset="utf-8">
+    <title>YO YO Monnaih Singh&rsquo; Website</title>
+    <meta name="description" content="Yo Yo Money Singh is the boss bruh.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Crimson+Text' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:100,200,300' rel='stylesheet' type='text/css'>
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body class="white">
+    
+<article>
+    <h1 class="article--header">Got New Artwork Made!</h1>
+    <h3 class="article--meta">Posted on 10/10/14</h3>
+    <p class="article--content">
+        I have been an ardent fan of design for a long time. I create digital art and all of my album art is my work.
+    </p>
+    <p class="article--content">
+        When my fans decided to give me a special gift, I never dreamt of something like this. So a big shoutout to all of you who put in hours of hardwork to make this. Thanks a lot!
+    </p>
+    <div class="gallery">
+        <img src="../images/yo.png" class="me">
+        <img src="../images/kek.jpg" class="small">
+        <img src="../images/01.jpg" class="med">
+        <img src="../images/02.jpg" class="med">
+        <img src="../images/03.jpg" class="med">
+        <img src="../images/04.jpg" class="med">
+    </div>
+    <br><br>
+    <br><br>
+    <div>
+        <a href="index.html" class = "button--lol">Back Home</a>
+    </div>
+</article>
+
+<script src="../scripts/jquery.min.js"></script>
+<script src="../scripts/main.js"></script>
+<script>
+$('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        if (target.length) {
+            $('html,body').animate({
+                scrollTop: target.offset().top
+            }, 1000);
+            return false;
+        }
+    }
+});
+</script>
+</body>
+
+</html>
