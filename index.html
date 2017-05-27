@@ -4,32 +4,57 @@
 <head>
     <title>Raghav Kukreti</title>
     <link rel="stylesheet" type="text/css" href="app.css">
-    <link href='http://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script type="text/javascript" src="https://rawgit.com/mikeflynn/egg.js/9d4e0518cf9db87f634b36df5ad805ab957dcac3/egg.min.js"></script>
-    <script type="text/javascript">
-    var egg = new Egg();
-    egg.addCode("up,up,down,down,left,right,left,right,b,a", function() {
-        $("body").css({
-            "background": "url(images.jpg)",
-            "font-family": "Comic Sans MS",
-            "color":"#fff"
-        });
-        $("h3").css("font-family", "Comic Sans MS");
-    }, "konami-code");
-    egg.addHook(function() {
-        console.log("Hook called for: " + this.activeEgg.keys);
-        console.log(this.activeEgg.metadata);
-    });
-    egg.listen();
-    </script>
+<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Playfair+Display" rel="stylesheet">
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <h1>I am Raghav Kukreti, a Delhi based digital designer.</h1>
-    <br>
-    <h3>I am currently a full time student and am available for freelance work. <br>Drop me a line at <a href="mailto:raghav.kukreti@gmail.com">raghav.kukreti[at]gmail.com</a>. Check out my <a href="#0">LinkedIn</a> profile, or <br>download <a href="https://www.behance.net/resumes/pdf?id=1074491">my CV</a>. My work is up on <a href="https://www.behance.net/raghavkukreti">Behance</a>.</h3>
+    <section class="main">
+        <div class="centered">
+            <div class="box">
+                <h1>raghav kukreti</h1>
+                <p>
+                    Delhi based digital designer.
+                </p>
+                <p>
+                    <a href="#0" class="work">work</a>
+                    <a href="#0">linkedin</a>
+                    <a href="#0">behance</a>
+                </p>
+                <p class="work_links">
+                    <a href="clean" class="one">Cle.an Framework</a>
+                    <a href="exunprelims" class="two">Drona Drone</a>
+                    <a href="kineses" class="three">Kinesis Corp</a>
+                    <a href="moneysingh" class="four">Yo Yo Money Singh</a>
+                    <a href="openlabs" class="five">Openlabs Team Page</a>
+                    <a href="practice" class="six">NY School of Music</a>
+                    <a href="synchrounous" class="seven">Synchronous</a>
+                    <a href="tedx" class="eight">TEDxDPSRKP</a>
+                    <a href="warp" class="nine">WarP</a>
+                    <a href="oldwebsite" class="ten">Old Website</a>
+                    <a href="socialnetwork" class="eleven">C++ Social Network</a>
+                </p>
+            </div>
+        </div>
+    </section>
+<script>
+    $(".work").on("click", function(){
+        $(".one").toggleClass("fadeInRight delay-1");
+        $(".two").toggleClass("fadeInRight delay-2");
+        $(".three").toggleClass("fadeInRight delay-3");
+        $(".four").toggleClass("fadeInRight delay-4");
+        $(".five").toggleClass("fadeInRight delay-5");
+        $(".six").toggleClass("fadeInRight delay-6");
+        $(".seven").toggleClass("fadeInRight delay-7");
+        $(".eight").toggleClass("fadeInRight delay-8");
+        $(".nine").toggleClass("fadeInRight delay-9");
+        $(".ten").toggleClass("fadeInRight delay-10");
+        $(".eleven").toggleClass("fadeInRight delay-11");
+    });
+</script>
 </body>
 
 </html>
