@@ -1,0 +1,222 @@
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family:'feathericons';
+    src:url('../fonts/feathericons/feathericons.eot?-8is7zf');
+    src:url('../fonts/feathericons/feathericons.eot?#iefix-8is7zf') format('embedded-opentype'), url('../fonts/feathericons/feathericons.woff?-8is7zf') format('woff'), url('../fonts/feathericons/feathericons.ttf?-8is7zf') format('truetype'), url('../fonts/feathericons/feathericons.svg?-8is7zf#feathericons') format('svg');
+}
+*, *:after, *:before {
+    border-box;
+    box-sizing: border-box;
+}
+.clearfix:before, .clearfix:after {
+    content:'';
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+body {
+    background: #f6f9fa;
+    color: #536d76;
+    font-weight: 400;
+    font-size: 1em;
+    font-family:'Raleway', Arial, sans-serif;
+}
+a {
+    color: #4f7f90;
+    text-decoration: none;
+    outline: none;
+}
+a:hover, a:focus {
+    color: #39545e;
+}
+section {
+    padding: 1em;
+    text-align: center;
+}
+
+.team-header {
+	margin: 0 auto;
+	padding: 4em 0;
+	text-align: center;
+}
+
+.team-header h1 {
+	margin: 0;
+	font-weight: 800;
+	font-size: 4em;
+	line-height: 1.5;
+}
+
+.team-header h1 span {
+	display: block;
+	padding: 0.6em 0 0.6em 0.1em;
+	font-size: 50%;
+	font-weight: 300;
+	color: #7e959d;
+}
+.grid {
+    overflow: hidden;
+    margin: 0;
+    padding: 3em 0 0 0;
+    width: 100%;
+    list-style: none;
+    text-align: center;
+}
+/* Common style */
+ .grid figure {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    overflow: hidden;
+    margin: -0.135em;
+    width: 33.333%;
+    height: 400px;
+    background: #3085a3;
+    text-align: center;
+    cursor: pointer;
+}
+.grid figure img {
+    position: relative;
+    display: block;
+    min-height: 100%;
+    opacity: 0.8;
+}
+.grid figure figcaption {
+    padding: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.grid figure figcaption::before, .grid figure figcaption::after {
+    pointer-events: none;
+}
+.grid figure figcaption, .grid figure a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/* Anchor will cover the whole item by default */
+
+/* For some effects it will show as a button */
+ .grid figure a {
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0;
+}
+.grid figure h2 {
+    word-spacing: -0.15em;
+    font-weight: 300;
+}
+.grid figure h2 span {
+    font-weight: 800;
+}
+.grid figure h2, .grid figure p {
+    margin: 0;
+}
+.grid figure p {
+    letter-spacing: 1px;
+    font-size: 68.5%;
+}
+
+ figure.member img {
+    background: rgba(0, 0, 0, 0.4);
+}
+figure.member figcaption {
+    top: auto;
+    bottom: 0;
+    padding: 1em;
+    height: 3.75em;
+    background: #fff;
+    color: #3c4a50;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+}
+figure.member h2 {
+    float: left;
+}
+figure.member figcaption > span {
+    float: right;
+}
+figure.member p {
+    position: absolute;
+    bottom: 8em;
+    padding: 2em;
+    color: #fff;
+    text-transform: none;
+    font-size: 90%;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+}
+figure.member h2, figure.member figcaption > span {
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0, 200%, 0);
+    transform: translate3d(0, 200%, 0);
+}
+figure.member figcaption > span::before {
+    display: inline-block;
+    padding: 8px 10px;
+    font-family:'feathericons';
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-eye::before {
+    content:'\e000';
+}
+.icon-paper-clip::before {
+    content:'\e001';
+}
+.icon-heart::before {
+    content:'\e024';
+}
+figure.member h2 {
+    display: inline-block;
+}
+figure.member:hover p {
+    opacity: 1;
+}
+figure.member:hover figcaption, figure.member:hover h2, figure.member:hover figcaption > span {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+figure.member:hover h2 {
+    -webkit-transition-delay: 0.05s;
+    transition-delay: 0.05s;
+}
+figure.member:hover figcaption > span:nth-child(4) {
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+figure.member:hover figcaption > span:nth-child(3) {
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+}
+figure.member:hover figcaption > span:nth-child(2) {
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+@media screen and (max-width: 69.5em) {
+    .grid figure {
+        width: 50%;
+    }
+    .grid figure figcaption {
+        font-size: 90%;
+    }
+}
+@media screen and (max-width: 41.5em) {
+    .grid figure {
+        width: 100%;
+    }
+}
