@@ -73,6 +73,26 @@ body {
         }
     }
 }
+
+.work_links {
+    text-align: center;
+    padding: 10px 0;
+    line-height: 1.5;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    a {
+        font-family: Source Code Pro !important;
+        font-size: 1rem;
+        text-decoration: none;
+        color: #222;
+        margin-right: 10px;
+        border-bottom: 1px solid rgba(#000, 0.8);
+        &:hover {
+            border-bottom: 2px solid rgba(#000, 0);
+        }
+    }  
+}
 // .main {
 //     height: 100vh;
 //     background: #111;

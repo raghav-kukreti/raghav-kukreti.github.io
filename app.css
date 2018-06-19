@@ -75,3 +75,22 @@ body {
     border-bottom: 2px solid transparent; }
     .main .links a:hover {
       border-bottom: 1px solid rgba(0, 0, 0, 0.8); }
+
+.work_links {
+  text-align: center;
+  padding: 10px 0;
+  line-height: 1.5;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%); }
+  .work_links a {
+    font-family: Source Code Pro !important;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #222;
+    margin-right: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.8); }
+    .work_links a:hover {
+      border-bottom: 2px solid transparent; }
