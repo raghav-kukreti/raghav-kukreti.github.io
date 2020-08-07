@@ -1,8 +1,30 @@
-<section class="post">
-	<h1 class="post_title">{{ post.title }}</h1>
-	<h4 class="metadata">By {{ post.author }} on {{ post.data }} in {{post.categories}}</h4>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="inital-scale=1.0,width=device-width">
+	<title>{{ page.title }}</title>
 
-	<p class="lead">
-		{{post.excerpt}}
-	</p>
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;500&family=Prata&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
+
+
+</head>
+<body>
+
+	{% include nav.html %}
+
+<section class="post">
+	<div class="inner">
+		<h1 class="post_title">{{ page.title }}</h1>
+		<h4 class="metadata">By {{ page.author }} on {{ page.date }} in {{page.categories}}</h4>
+
+		<div class="content">
+			{{page.content}}
+		</div>
+	</div>
+
 </section>
+
+</body>
+</html>
