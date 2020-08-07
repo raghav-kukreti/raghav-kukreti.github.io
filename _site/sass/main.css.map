@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "main.css",
+	"sources": [
+		"main.scss"
+	],
+	"sourcesContent": [
+		"*,\n*::after,\n*::before {\n\tbox-sizing: border-box;\n}"
+	],
+	"names": [],
+	"mappings": "AAAA,AAAA,CAAC,EACD,CAAC,EAAE,KAAK,EACR,CAAC,EAAE,MAAM,CAAC,EACT,UAAU,EAAE,UAAU,GACtB"
+}

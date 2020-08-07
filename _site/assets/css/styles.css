@@ -1,0 +1,68 @@
+@import url(fruity.css);
+:root { --light-blue: #0099FF; --dark-blue: #040A22; --black: #202020; }
+
+*, *::after, *::before { box-sizing: border-box; padding: 0; margin: 0; }
+
+body, html { font-size: 100%; font-family: 'IBM Plex Mono'; font-weight: 300; color: var(--black); }
+
+.animated { animation-duration: infinite; animation-fill-mode: both; }
+
+h1, h2, h3 { font-family: 'Prata'; font-weight: normal; }
+
+h4, h5, h6 { font-family: 'IBM Plex Mono'; font-weight: 500; text-transform: uppercase; letter-spacing: .5px; }
+
+a { color: var(--light-blue); text-decoration: none; }
+
+a:hover { color: var(--dark-blue); }
+
+nav { background: #fff; padding: 2rem 3rem; position: fixed; width: 100%; box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1); display: flex; z-index: 100; }
+
+nav .logo { display: flex; flex: 1; }
+
+nav .logo a { color: #222 !important; text-decoration: none; transition: all .35s ease-in-out; filter: blur(0); }
+
+nav .logo a:hover { filter: blur(3px); }
+
+nav .links { text-align: right; justify-content: flex-end; flex: 1; }
+
+nav .links li { display: inline; width: auto; margin-right: 30px; }
+
+ul { list-style-type: none; }
+
+.sidebar { padding: 0 3rem; height: 100vh; width: 30vw; position: fixed; left: 0; }
+
+.sidebar .wrapper { position: absolute; bottom: 10vh; }
+
+.sidebar .wrapper .text { width: 80%; }
+
+.sidebar .wrapper .text h4 { margin-bottom: 1.25vh; opacity: .9; }
+
+.sidebar .image { width: 200px; height: 200px; filter: invert(1); margin-bottom: 5vh; background: url("/assets/img/me.jpg") center center no-repeat; background-size: cover; border-radius: 10px; }
+
+.excerpts { position: relative; left: 30vw; top: 20vh; width: 50vw; }
+
+.excerpt { margin-bottom: 10px; }
+
+.excerpt h1 { margin-bottom: 10px; font-size: 2rem; }
+
+.excerpt h4 { opacity: .4; font-weight: 300; margin-bottom: 30px; }
+
+.lead { line-height: 1.333333; margin-bottom: 10px; }
+
+.post { top: 20vh; position: relative; width: 40vw; margin: 0 auto; }
+
+.post .inner { width: 100%; }
+
+.post .inner h1 { margin-bottom: 10px; font-size: 2rem; }
+
+.post .inner h4 { opacity: .4; font-weight: 300; margin-bottom: 30px; }
+
+.post .inner .content p { line-height: 1.333333; padding-bottom: 20px; }
+
+.mobile-log { display: none; }
+
+footer { background: #000; color: rgba(255, 255, 255, 0.2); padding: 10px; position: absolute; width: 100%; bottom: 0; font-size: .8rem; text-align: center; }
+
+@media screen and (max-width: 730px) { nav .logo { display: none; } nav .links { text-align: center; } nav .links li { font-size: 0.8rem; margin-right: 5px; } .mobile-log { display: block; margin: 20px 0; text-transform: uppercase; font-family: 'IBM Plex Mono'; font-weight: normal; } .sidebar { width: 100vw; position: relative; padding: 0 5rem; background-size: 100%; } .excerpts { left: 5rem; top: 0; width: 70vw; margin: 50px 0; } .separator { display: block; filter: sepia(0.6); background: url("/assets/img/separator_mobile.jpg") center center no-repeat fixed; height: 10vh; width: 100%; background-size: cover; } footer { background: #000; color: rgba(255, 255, 255, 0.8); padding: 10px; position: relative; bottom: 0; font-size: .8rem; text-align: center; } }
+
+/*# sourceMappingURL=styles.css.map */
