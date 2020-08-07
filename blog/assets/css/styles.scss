@@ -27,14 +27,6 @@ html {
 	color: var(--black);
 }
 
-@keyframes invertidek {
-	0% {
-		filter: invert(0);
-	}
-	100% {
-		filter: invert(1);
-	}
-}
 
 .animated {
 	animation-duration: infinite;
@@ -66,9 +58,10 @@ a {
 
 nav {
 	background: #fff;
-	padding: 3rem;
+	padding: 2rem 3rem;
 	position: fixed;
 	width: 100%;
+	box-shadow: 0px 1px 0px rgba(#000, 0.1);
 	display: flex;
 	z-index: 100;
 	.logo {
@@ -126,13 +119,12 @@ ul {
 	.image {
 		width: 200px;
 		height: 200px;
-		// filter:  invert(1);
+		filter:  invert(1);
 		margin-bottom: 5vh;
 		// opacity: .5;
 		background: url('/assets/img/me.jpg') center center no-repeat;
 		background-size: cover;
 		border-radius: 10px;
-		animation-name: invertidek;
 
 	}
 }
@@ -148,6 +140,7 @@ ul {
 
 
 .excerpt {
+	margin-bottom: 10px;
 	h1 {
 		margin-bottom: 10px;	
 		font-size: 2rem;
@@ -162,6 +155,7 @@ ul {
 
 .lead {
 	line-height: 1.333333;
+	margin-bottom: 10px;
 }
 
 
@@ -190,7 +184,77 @@ ul {
 		}
 	}
 }
-
-.code {
-
+.mobile-log {
+	display: none;
 }
+footer {
+	background: #000;
+	color: rgba(#fff, 0.2);
+	padding: 10px;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	font-size: .8rem; 
+	text-align: center;
+}
+
+
+@media screen and (max-width: 730px)  {
+	nav{
+		.logo {
+			display: none;
+		}
+
+		.links {
+			text-align: center;
+
+			li {
+				font-size: 0.8rem;
+				margin-right: 5px;
+			}
+
+		}
+	}
+	.mobile-log {
+		display: block;
+		margin: 20px 0;
+		text-transform: uppercase;
+		font-family: 'IBM Plex Mono';
+		font-weight: normal;
+	}
+	
+	.sidebar {
+		width: 100vw;
+		position: relative;
+		padding: 0 5rem;
+		background-size: 100%;
+	}
+
+
+	.excerpts {
+		left: 5rem;
+		top: 0;
+		width: 70vw;
+		margin: 50px 0;
+	}
+
+	.separator {
+		display: block;
+		filter: sepia(.6);
+		background: url('/assets/img/separator_mobile.jpg') center center no-repeat fixed;
+		height: 10vh;
+		width: 100%;
+		background-size: cover;
+	}
+
+	footer {
+		background: #000;
+		color: rgba(#fff, 0.8);
+		padding: 10px;
+		position: relative;
+		bottom: 0;
+		font-size: .8rem; 
+		text-align: center;
+	}
+}
+

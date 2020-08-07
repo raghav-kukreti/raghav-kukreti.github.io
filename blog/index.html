@@ -9,21 +9,27 @@ layout: default
 			
 		</div>
 		<div class="text">
+			<h1 class="mobile-log">raghav kukreti's log</h1>
 			<h4 class="sub">Deep Learning, Tooling, Typography, Music</h4>
 
 		</div>
 
 		<div class="sub_links">
 			<ul>
-				<li><a href="#0">git@raghavkukreti</a></li>
-				<li><a href="#0">lastfm/raghavkukreti</a></li>
-				<li><a href="#0">linkedin/raghavkukreti</a></li>
-				<li><a href="#0">linkedin/deepflowdata</a></li>
+				<li><a href="https://github.com/raghav-kukreti?tab=repositories">git@raghavkukreti</a></li>
+				<li><a href="https://last.fm/users/raghavkukreti/">lastfm/raghavkukreti</a></li>
+				<li><a href="https://soundcloud.com/raghav-kukreti">soundcloud/raghavkukreti</a></li>
+				<li><a href="https://www.linkedin.com/in/raghav-kukreti-85617141/">linkedin/raghavkukreti</a></li>
+				<li><a href="https://www.linkedin.com/company/deepflowdata/">linkedin/deepflowdata</a></li>
+				<li><a href="https://raghav-kukreti.github.io/deepFlowData/">web/deepflowdata</a></li>
+
+				
 			</ul>
 		</div>
 	</div>
 </section>
 
+<div class="separator"></div>
 
 <section class="excerpts">
 	{% for post in site.posts %}
@@ -35,7 +41,7 @@ layout: default
 				{{ post.excerpt }}
 			</p>
 
-			<a href="{{post.url}}">Read more...</a>
 		</div>
+		<a href="{{post.url}}">Read more...</a>
 	{% endfor %}
 </section>
