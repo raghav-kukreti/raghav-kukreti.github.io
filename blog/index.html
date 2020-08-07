@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+
+<section class="sidebar">
+	<div class="wrapper">
+		<div class="image animated">
+			
+		</div>
+		<div class="text">
+			<h4 class="sub">Deep Learning, Tooling, Typography, Music</h4>
+
+		</div>
+
+		<div class="sub_links">
+			<ul>
+				<li><a href="#0">git@raghavkukreti</a></li>
+				<li><a href="#0">lastfm/raghavkukreti</a></li>
+				<li><a href="#0">linkedin/raghavkukreti</a></li>
+				<li><a href="#0">linkedin/deepflowdata</a></li>
+			</ul>
+		</div>
+	</div>
+</section>
+
+
+<section class="excerpts">
+	{% for post in site.posts %}
+		<div class="excerpt">
+			<h1>{{post.title}}</h1>
+		</div>
+	{% endfor %}
+</section>

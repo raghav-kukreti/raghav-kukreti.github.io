@@ -1,0 +1,131 @@
+---
+---
+// @import "main";
+
+
+:root {
+	--light-blue: #0099FF;
+	--dark-blue: #040A22;
+	--black: #202020;
+
+}
+
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	transition: all .35s ease-in-out;
+}
+
+body,
+html {
+	font-size: 100%;
+	font-family: 'IBM Plex Mono';
+	font-weight: 300;
+	color: var(--black);
+}
+
+@keyframes invertidek {
+	0% {
+		filter: invert(0);
+	}
+	100% {
+		filter: invert(1);
+	}
+}
+
+.animated {
+	animation-duration: infinite;
+	animation-fill-mode: both;
+}
+h1,
+h2,
+h3 {
+	font-family: 'Prata';
+	font-weight: normal;	
+}
+
+h4,
+h5,
+h6 {
+	font-family: 'IBM Plex Mono';
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: .5px;
+}
+
+a {
+	color: var(--light-blue);
+	text-decoration: none;
+	&:hover {
+		color: var(--dark-blue);
+	}
+}
+
+nav {
+	background: #fff;
+	padding: 3rem;
+	position: fixed;
+	width: 100%;
+	display: flex;
+	z-index: 100;
+	.logo {
+		display: flex;
+		flex: 1;
+
+		// float: left;	
+	}
+
+	.links {
+			text-align: right;
+
+			justify-content: flex-end; 
+			flex: 1;
+		li {
+			display: inline;
+			width: auto;
+			margin-right: 30px;
+		}
+	}
+}
+
+ul {
+	list-style-type: none;
+}
+
+
+.sidebar {
+	padding: 0 3rem;
+	height: 100vh;
+	width: 30vw;
+	position: relative;
+	left: 0;
+	// background: #f6f6f6;
+	.wrapper {
+		position: absolute;
+		bottom: 10vh;
+		.text {
+			width: 80%;
+			h4 {		
+				margin-bottom: 1.25vh;
+				opacity: .9;
+			}
+		}
+	}
+	
+	.image {
+		width: 200px;
+		height: 200px;
+		// filter:  invert(1);
+		margin-bottom: 5vh;
+		// opacity: .5;
+		background: url('/assets/img/me.jpg') center center no-repeat;
+		background-size: cover;
+		border-radius: 10px;
+		animation-name: invertidek;
+
+	}
+}
