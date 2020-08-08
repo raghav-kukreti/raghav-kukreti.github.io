@@ -3,35 +3,12 @@ layout: default
 ---
 
 
-<section class="sidebar">
-	<div class="wrapper">
-		<div class="image animated">
-			
-		</div>
-		<div class="text">
-			<h1 class="mobile-log">raghav kukreti's log</h1>
-			<h4 class="sub">Deep Learning, Tooling, Typography, Music</h4>
-
-		</div>
-
-		<div class="sub_links">
-			<ul>
-				<li><a href="https://github.com/raghav-kukreti?tab=repositories">git@raghavkukreti</a></li>
-				<li><a href="https://last.fm/users/raghavkukreti/">lastfm/raghavkukreti</a></li>
-				<li><a href="https://soundcloud.com/raghav-kukreti">soundcloud/raghavkukreti</a></li>
-				<li><a href="https://www.linkedin.com/in/raghav-kukreti-85617141/">linkedin/raghavkukreti</a></li>
-				<li><a href="https://www.linkedin.com/company/deepflowdata/">linkedin/deepflowdata</a></li>
-				<li><a href="https://raghav-kukreti.github.io/deepFlowData/">web/deepflowdata</a></li>
-
-				
-			</ul>
-		</div>
-	</div>
-</section>
+{% include sidebar.html %}
 
 <div class="separator"></div>
 
 <section class="excerpts">
+	<h1 class="note_header">Posts</h1>
 	{% for post in site.posts %}
 		<div class="excerpt">
 			<h1>{{post.title}}</h1>
@@ -44,4 +21,21 @@ layout: default
 		</div>
 		<a href="{{post.url}}">Read more...</a>
 	{% endfor %}
+
+	<div class="separator_line"></div>
+	<h1 class="note_header">Notes</h1>
+
+	{% for note in site.notes %}
+
+	<div class="excerpt">
+		<h1 class="note--title">{{note.title}}</h5>
+		<h4 class="note--sub">{{note.meta}} by {{note.author}}</h4>
+
+		{{note.content}}
+
+	</div>
+	<a href="{{note.url}}">Read more...</a>
+
+	{% endfor %}
 </section>
+

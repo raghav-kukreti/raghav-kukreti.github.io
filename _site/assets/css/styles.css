@@ -15,7 +15,7 @@ a { color: var(--light-blue); text-decoration: none; }
 
 a:hover { color: var(--dark-blue); }
 
-nav { background: #fff; padding: 2rem 3rem; position: fixed; width: 100%; box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1); display: flex; z-index: 100; }
+nav { background: #fff; padding: 2rem 3rem; position: fixed; width: 100%; box-shadow: 0px 0.5px 0px rgba(0, 0, 0, 0.1); display: flex; z-index: 100; }
 
 nav .logo { display: flex; flex: 1; }
 
@@ -43,7 +43,7 @@ ul { list-style-type: none; }
 
 .excerpt { margin-bottom: 10px; }
 
-.excerpt h1 { margin-bottom: 10px; font-size: 2rem; }
+.excerpt h1 { margin-bottom: 10px; font-size: 1.9rem; }
 
 .excerpt h4 { opacity: .4; font-weight: 300; margin-bottom: 30px; }
 
@@ -53,7 +53,7 @@ ul { list-style-type: none; }
 
 .post .inner { width: 100%; }
 
-.post .inner h1 { margin-bottom: 10px; font-size: 2rem; }
+.post .inner h1 { margin-bottom: 10px; font-size: 1.8rem; }
 
 .post .inner h4 { opacity: .4; font-weight: 300; margin-bottom: 30px; }
 
@@ -64,5 +64,19 @@ ul { list-style-type: none; }
 footer { background: #000; color: rgba(255, 255, 255, 0.2); padding: 10px; position: absolute; width: 100%; bottom: 0; font-size: .8rem; text-align: center; }
 
 @media screen and (max-width: 730px) { nav .logo { display: none; } nav .links { text-align: center; } nav .links li { font-size: 0.8rem; margin-right: 5px; } .mobile-log { display: block; margin: 20px 0; text-transform: uppercase; font-family: 'IBM Plex Mono'; font-weight: normal; } .sidebar { width: 100vw; position: relative; padding: 0 5rem; background-size: 100%; } .excerpts { left: 5rem; top: 0; width: 70vw; margin: 50px 0; } .separator { display: block; filter: sepia(0.6); background: url("/assets/img/separator_mobile.jpg") center center no-repeat fixed; height: 10vh; width: 100%; background-size: cover; } footer { background: #000; color: rgba(255, 255, 255, 0.8); padding: 10px; position: relative; bottom: 0; font-size: .8rem; text-align: center; } }
+
+.content--about { position: absolute; left: 50%; transform: translateX(-50%); top: 20vh; }
+
+p { line-height: 1.33333; margin-bottom: 10px; }
+
+.separator_line { height: 2px; margin: 3rem 0; width: 100%; background: #f2f2f2; }
+
+.note--title { font-size: 1.2rem !important; font-family: 'IBM Plex Mono'; }
+
+.note--sub { font-size: .8rem !important; }
+
+.note_header { float: right; text-transform: uppercase; font-family: 'IBM Plex Mono'; color: #fff; text-shadow: -2px 2px 0 rgba(255, 51, 85, 0.4), 2px -2px 0 rgba(0, 173, 239, 0.4), -2px -2px 0 rgba(46, 204, 113, 0.5), 2px 2px 0 rgba(0, 0, 0, 0.3); }
+
+.current { margin-top: 2rem; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kinesis Technologies and Solutions</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link href='http://fonts.googleapis.com/css?family=Montserrat|Playfair+Display:400,400italic|Lato:400' rel='stylesheet' type='text/css'>
+    <link href='css/grid.css' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <header class="slideInDown">
+        <div class="nav">
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#what">What we do</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li><a href="#kontakt">get in touch</a></li>
+            </ul>
+        </div>
+    </header>
+    <section class="hero" id="hero">
+        <div class="centered">
+            <h1 class="fadeInDown">We ideate, design, implement successful IT strategies &amp; business processes.</h1>
+            <p class="lead fadeInUp">
+                Kineses Tech. is a yada yada yada small introduction about the company, nothing long a maximum of 5 lines.
+            </p>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="row">
+            <h1>about</h1>
+            <p class="lead">
+                If you are a company leader or a senior management team member, we know that you often face a quandary when considering key questions surrounding your business strategy and operations. You like to seek external advice about an issue or in some cases, a simple second opinion. But you often have no one to turn to that is independent, trusted, experienced and competent.
+            </p>
+            <p class="lead">
+                Kineses Technologies is an independent technology firm which caters to every need ranging from this to this. See <a href="#0">what we do</a>.
+            </p>
+        </div>
+    </section>
+    <section class="capabilities" id="what">
+        <div class="row">
+            <h1>what we do</h1>
+        </div>
+    </section>
+    <section class="quot" id="kontakt">
+        <div class="row">
+            <h1>get in touch</h1>
+            <p class="sub">
+                Have a project in mind?
+            </p>
+            <p class="lead">
+                The best way to reach us is by mail.
+                <br> Send us a mail at <a href="mailto:kontakt@kinesestech.com">kontakt@kinesestech.com</a>
+            </p>
+            <p class="lead">
+                We are also on social media.
+                <br>
+                <a href="#0">Twitter</a>
+                <a href="#0">Facebook</a>
+                <a href="#0">LinkedIn</a>
+            </p>
+        </div>
+    </section>
+    <div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js
+    	
+    	"></script>
+    </div>
+    <script>
+    $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: target.offset().top
+                }, 300);
+                return false;
+            }
+        }
+    });
+    </script>
+</body>
+
+</html>

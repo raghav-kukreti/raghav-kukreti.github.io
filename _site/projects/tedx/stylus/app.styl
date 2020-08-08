@@ -1,0 +1,574 @@
+$prim = #e62b1e
+$font-stack = "ApercuRegular", Helvetica, Helvetica Neue, Arial, sans-serif;
+@font-face {
+	font-family ApercuRegular
+	src : url(../fonts/apercu-reg.ttf);
+}
+
+@font-face {
+	font-family ApercuLight
+	src : url(../fonts/apercu-light.ttf);
+}
+::selection
+	// background rgba($prim, 0.8)
+*,
+*::after,
+*::before
+	box-sizing border-box
+	transition all 0.35s ease-in-out
+	margin: 0;
+	padding: 0;
+	text-rendering geometricPrecision
+	
+	border: 0;
+	outline: 0;
+	-webkit-font-smoothing antialiased !important
+	font-size: 100%;
+	background: rgba(0, 0, 0, 0);
+
+body
+	position relative
+	background #F1F0EE
+	font-family ApercuRegular
+	color #333332
+	line-height 1.55
+
+.hero
+	display table
+	width 100%
+	height 100vh
+	background url(../img/bg.jpg) center center no-repeat fixed
+	background-size cover
+	.centered
+		display table-cell
+		vertical-align middle
+		text-align center
+		height 100vh
+		background rgba(#000, 0.66)
+		
+		h1
+			font-size 4.8rem
+			color #fff
+			line-height 0.56
+			letter-spacing -.2px
+			font-family $font-stack
+			font-stretch ultra-expanded
+			.red
+				letter-spacing -2px
+				font-weight 800
+				color $prim
+				sup
+					font-size 0.68em
+			.place
+				color #fff
+				font-weight 300
+				letter-spacing -1px
+		
+		h2
+			font-size 1rem
+			color #fff
+			margin-top 40px
+			font-weight 700
+			span
+				color $prim
+.pl
+	color #fff
+	margin-top 100px
+	font-size 2.16rem
+	font-weight 300
+	letter-spacing -1px
+
+.about
+	height 100vh
+	padding 7em 0
+	background #fff
+	h1
+		font-family: $font-stack;
+		font-size: 2em;
+		line-height: 1.4em;
+		margin: 0;
+		padding: 0 0 25px 0;
+		font-weight: normal;
+	h2
+		font-family $font-stack;
+		font-weight normal
+// Helper classes
+.delay-small
+	animation-delay 0.24s
+
+.delay-medium
+	animation-delay 0.58s
+
+.wrapper
+	display block
+	// float left
+	width 100%
+	
+.central
+	display block
+	margin 0 auto
+	
+.left-spacer
+	padding-left 100px
+	padding-right 88px
+	
+.content--block
+	display block
+	max-width 39em
+	margin 0 auto
+	
+.button
+	text-align: center;
+	display: block;
+	width: 224px;
+	font-family $font-stack
+	border: 1px solid #333332;
+	color #333332
+	padding: 20px;
+	margin-top 40px
+	text-transform: uppercase;
+	-moz-box-shadow: 4px 4px 0px 0px rgba(51, 51, 50, 1);
+	-webkit-box-shadow: 4px 4px 0px 0px #333332;
+	box-shadow: 4px 4px 0px 0px #333332;
+	-webkit-transition: all 0.1s cubic-bezier(0, 0, 0.25, 1);
+	-moz-transition: all 0.1s cubic-bezier(0, 0, 0.25, 1);
+	-o-transition: all 0.1s cubic-bezier(0, 0, 0.25, 1);
+	-ms-transition: all 0.1s linear;
+	transition: all 0.1s cubic-bezier(0, 0, 0.25, 1);
+	&:hover
+		border: 1px solid rgba(51, 51, 50, .5);
+		margin: 43px 3px;
+		color #333332
+		-moz-box-shadow: 0px 0px 0px 0px rgba(51, 51, 50, .5);
+		-webkit-box-shadow: 0px 0px 0px 0px rgba(51, 51, 50, .5);
+		box-shadow: 0px 0px 0px 0px rgba(51, 51, 50, .5);
+a
+	text-decoration none
+
+
+nav.main-nav {
+	z-index 2000
+	position fixed
+	width: 100%;
+	height: 90px;
+	border-bottom 1px solid rgba(#000, 0.16)
+	background: #FFF;
+}
+
+.inner {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+nav.main-nav .inner {
+	position: relative;
+	padding-left: 260px;
+	// padding-right: 30px;
+}
+
+nav.main-nav figure.logo {
+	position: absolute;
+	top: 23px;
+	left: 0;
+	width: 250px;
+	height: 50px;
+	text-indent: -9999px;
+	background: url('../img/logo.png') no-repeat;
+}
+
+nav.main-nav ul {
+	overflow: visible;
+	float: right;
+	height: 90px;
+	padding-top: 30px;
+}
+
+ul.inline {
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+nav.main-nav ul li 
+	position: relative;
+	font-weight 700
+	text-transform lowercase	
+	margin-right: 30px;
+
+		
+ul.inline li {
+	float: left;
+	display: inline-block;
+}
+
+.menu-item > a
+	font-size: 18px;
+	color: #333332;
+	font-family $font-stack
+	padding-bottom 6px
+	text-transform: lowercase;
+	border-bottom 2px solid rgba($prim, 0) !important
+	
+	&:hover
+		color #333332
+		border-bottom 2px solid $prim !important
+		
+
+.gutter
+	padding-bottom 55px
+	
+.col-4
+	display block
+	width 50%
+	float left
+	
+.cont-block
+	padding-right 12px
+
+.image-grid
+	padding-bottom 12px
+	
+.thumb-post
+	position: relative;
+	display: block;
+	
+	a
+		display block
+		border none
+		
+
+.tanmay
+	background url('../img/lol.jpg') center center no-repeat
+	height 300px
+	opacity 0.77
+
+.sana
+	background url('../img/10.jpg') center center no-repeat
+	height 300px
+	opacity 0.77
+
+.guy
+	background url('../img/m8.jpg') center center no-repeat
+	height 300px
+	opacity 0.77
+	
+.lol
+	background url('../img/52.jpg') center center no-repeat
+	height 300px
+	opacity 0.77
+
+footer
+	background #222
+	padding 50px
+	height 5vh
+	
+	.left
+		color #888
+		font-family monospace
+		a
+			color #999
+			padding-bottom 1px
+			border-bottom 1px solid rgba(#888,1)
+			
+			&:hover
+				color #888
+				padding-bottom 4px
+
+.organizers
+	height 135vh
+	h1
+		font-family $font-stack
+		font-size 3rem
+		padding 0 120px
+		padding-top 50px
+		padding-bottom 5px
+	h2
+		padding 0px 125px
+		
+		font-weight normal
+		padding-bottom 50px
+		font-family $font-stack
+		&::after
+			background-color: #333;
+			display: block;
+			content: "";
+			height: 3px;
+			margin: 18px 0px;
+			width: 8.47039%;
+			
+.base-info
+	height 480px
+	background #262626
+	
+	padding-top 120px
+	width 100%
+	.base-about
+		width: 460px;
+		height: 390px;
+		margin-right: 20px;
+		
+	span.header
+		font-size: 28px;
+		font-weight 700
+		line-height: 30px;
+		font-family Arial
+		color: #FFF;
+	p
+		color: #FFF;
+		line-height: 24px;
+		margin-right: 20px;
+		margin-top 20px;
+
+
+.float-left {
+	float: left !important;
+}
+.line-top {
+	position: relative;
+}
+.line-top:after {
+	content: '';
+	position: absolute;
+	top: -10px;
+	left: 0;
+	width: 40px;
+	height: 1px;
+	background: #FF2B06;
+}
+
+div.social {
+	width: 220px;
+	height: 390px;
+	margin-right: 120px;
+}
+
+div.social ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 16px;
+}
+
+div.social ul li {
+    margin-bottom: 4px;
+}
+
+div.social ul li a {
+    -webkit-transition: color 200ms cubic-bezier(0.6, -0.28, 0.735, 0.045) 0;
+    -moz-transition: color 200ms cubic-bezier(0.6, -0.28, 0.735, 0.045) 0s;
+    -o-transition: color 200ms cubic-bezier(0.6, -0.28, 0.735, 0.045) 0;
+    transition: color 200ms cubic-bezier(0.6, -0.28, 0.735, 0.045) 0;
+    color: #FFF;
+    text-decoration: none;
+}
+
+div.social ul li a:hover {
+    color: $prim;
+}
+
+.main-content
+	overflow: hidden;
+	padding-top: 120px;
+	padding-bottom: 200px;
+	
+.wrapper-new {
+    width: 944px;
+    margin: 0 auto;
+    padding: 40px 0 0 0;
+}
+
+section.blog-overview header {
+    position: relative;
+    margin-top: 20px;
+    height: 75px;
+    width: 100%;
+}
+
+.main-header
+	line-height 42px
+	font-size 40px
+	font-family Arial
+	letter-spacing -2px
+	&::after
+		content: '';
+		position: absolute;
+		top: -25px;
+		left: 0;
+		width: 60px;
+		height: 10px;
+		background: #FF2B06;
+		
+
+article.blog-excerpt 
+	position: relative;
+	width: 100%;
+	height: 360px;
+	margin-bottom: 30px;
+	background: #FFF;
+
+	.main-header
+		font-size 30px
+		font-family Playfair Display
+		letter-spacing -.2px
+		line-height 1.2
+		margin-bottom 10px
+		a
+			color #262626
+			border none
+			
+			&:hover
+				color $prim
+			
+
+figure.main-image {
+    overflow: hidden;
+    poisition: absolute;
+    top: 0;
+    left: 0;
+    width: 460px;
+    background-size cover
+    height: 360px;
+}
+
+div.content {
+    width: 480px;
+    height: 260px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 40px 40px 0 40px;
+    overflow: hidden;
+}
+
+a
+	color #262626
+	border-bottom 1px solid
+	&:hover
+		color $prim
+
+.read 
+	padding-top 40px
+
+.post
+	width 620px
+	margin 0 auto
+	
+	.main-header
+		position: relative;
+		margin-bottom: 25px;
+		color: #000;
+		&:after
+			content: '';
+			position: absolute;
+			top: -25px;
+			left: 0;
+			width: 60px;
+			height: 10px;
+			background: #FF2B06;
+	.subheading
+		font-size 24px
+		line-height 30px
+		// text-align justify
+		color #444
+		margin-bottom 30px
+		
+p.lead
+	padding-top 20px;
+	font-size 1.22rem
+	line-height 1.42
+	font-family ApercuLight
+	
+blockquote
+	margin: 1em 10px;
+	padding 10px 30px
+	border-left 6px solid rgba(grey, 0.18);
+	text-align justify
+	color #666
+	font-family Georgia
+	font-style italic
+	
+
+section#main-content {
+    overflow: hidden;
+    padding-top: 120px;
+    padding-bottom: 200px;
+}
+
+h3 {
+	margin: 2.5em 0 1em;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.time {
+    width: 135px;
+    display: inline-block;
+}
+
+.session {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+h4{
+    margin: 2.5em 0 1em;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+section.people {
+    width: 100%;
+    padding-top: 40px;
+}
+
+ul.tabs {
+    overflow: visible;
+    width: 100%;
+    margin: 40px 0;
+    display: inline-block;
+}
+
+ul.tabs li {
+    /* width: 25%; */
+    height: 60px;
+    border: #D9D9D9 1px solid;
+    border-top: none;
+    border-right: none;
+    background: #FFF;
+}
+ul.inline li {
+    float: left;
+    display: inline-block;
+}
+
+ul.tabs li a {
+    padding: 0 20px;
+    -webkit-transition: all 200ms cubic-bezier(0.755, 0.05, 0.855, 0.06) 0;
+    -moz-transition: all 200ms cubic-bezier(0.755, 0.05, 0.855, 0.06) 0s;
+    -o-transition: all 200ms cubic-bezier(0.755, 0.05, 0.855, 0.06) 0;
+    transition: all 200ms cubic-bezier(0.755, 0.05, 0.855, 0.06) 0;
+    display: block;
+    line-height: 60px;
+    text-align: center;
+    color: #444;
+}
+ul.inline li a {
+    text-decoration: none;
+    border-bottom none
+}
+
+ul.tabs li a:hover {
+    background: #FF2B06;
+    color: #FFF;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.subheading {
+    font-size: 24px;
+    line-height: 30px;
+}
