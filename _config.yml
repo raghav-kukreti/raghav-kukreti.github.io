@@ -36,6 +36,10 @@ collections:
     output: true
     permalink: /notes/:path/
 
+feed:
+  collections:
+    - posts
+    - notes
 # Build settings
 plugins:
   - jekyll-feed

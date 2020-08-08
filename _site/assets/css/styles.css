@@ -3,7 +3,9 @@
 
 *, *::after, *::before { box-sizing: border-box; padding: 0; margin: 0; }
 
-body, html { font-size: 100%; font-family: 'IBM Plex Mono'; font-weight: 300; color: var(--black); }
+body, html { font-size: 100%; font-family: 'IBM Plex Mono'; font-weight: 300; color: var(--black); min-height: 100%; }
+
+body { position: relative; padding-bottom: 40px; }
 
 .animated { animation-duration: infinite; animation-fill-mode: both; }
 
@@ -11,7 +13,7 @@ h1, h2, h3 { font-family: 'Prata'; font-weight: normal; }
 
 h4, h5, h6 { font-family: 'IBM Plex Mono'; font-weight: 500; text-transform: uppercase; letter-spacing: .5px; }
 
-a { color: var(--light-blue); text-decoration: none; }
+a { color: var(--light-blue); text-decoration: none; -webkit-tap-highlight-color: transparent; }
 
 a:hover { color: var(--dark-blue); }
 
@@ -39,9 +41,9 @@ ul { list-style-type: none; }
 
 .sidebar .image { width: 200px; height: 200px; filter: invert(1); margin-bottom: 5vh; background: url("/assets/img/me.jpg") center center no-repeat; background-size: cover; border-radius: 10px; }
 
-.excerpts { position: relative; left: 30vw; top: 20vh; width: 50vw; }
+.excerpts { position: relative; left: 30vw; top: 20vh; text-align: justify; width: 50vw; }
 
-.excerpt { margin-bottom: 10px; }
+.excerpt { margin-bottom: 30px; }
 
 .excerpt h1 { margin-bottom: 10px; font-size: 1.9rem; }
 
@@ -61,13 +63,13 @@ ul { list-style-type: none; }
 
 .mobile-log { display: none; }
 
-footer { background: #000; color: rgba(255, 255, 255, 0.2); padding: 10px; position: absolute; width: 100%; bottom: 0; font-size: .8rem; text-align: center; }
+footer { background: #000; color: rgba(255, 255, 255, 0.2); height: 40px; padding: 10px; position: absolute; left: 0; right: 0; bottom: 0; width: 100%; font-size: .8rem; text-align: center; }
 
 .content--about { position: absolute; left: 50%; transform: translateX(-50%); top: 20vh; }
 
 .content--about img { width: 200px; height: 200px; border-radius: 10px; display: none; }
 
-@media screen and (max-width: 730px) { nav .logo { display: none; } nav .links { text-align: center; } nav .links li { font-size: 0.8rem; margin-right: 5px; } .mobile-log { display: block; margin: 20px 0; text-transform: uppercase; font-family: 'IBM Plex Mono'; font-weight: normal; } .sidebar { width: 100vw; position: relative; padding: 0 5rem; background-size: 100%; } .excerpts { left: 5rem; top: 0; width: 70vw; margin: 50px 0; } .separator { display: block; filter: sepia(0.6); background: url("/assets/img/separator_mobile.jpg") center center no-repeat fixed; height: 10vh; width: 100%; background-size: cover; } footer { background: #000; color: rgba(255, 255, 255, 0.8); padding: 10px; position: relative; bottom: 0; display: block; font-size: .8rem; text-align: center; } .post { height: 100%; width: 90vw; } .mobile_hidden { display: none; } .content--about { padding: 2rem 0; left: 40%; transform: translateX(-40%); } .content--about img { display: block; margin-bottom: 1rem; } .page_wrapper { padding: 5rem 0; } }
+@media screen and (max-width: 730px) { nav .logo { display: none; } nav .links { text-align: center; } nav .links li { font-size: 0.8rem; margin-right: 5px; } .mobile-log { display: block; margin: 20px 0; text-transform: uppercase; font-family: 'IBM Plex Mono'; font-weight: normal; } .sidebar { width: 100vw; position: relative; padding: 0 5rem; background-size: 100%; } .excerpts { left: 3rem; top: 0; width: 70vw; margin: 50px 0; } .separator { display: block; filter: sepia(0.6); background: url("/assets/img/separator_mobile.jpg") center center no-repeat fixed; height: 10vh; width: 100%; background-size: cover; } footer { background: #000; color: rgba(255, 255, 255, 0.8); padding: 10px; position: relative; bottom: 0; display: block; font-size: .8rem; text-align: center; } .post { height: 100%; width: 90vw; } .mobile_hidden { display: none; } .content--about { padding: 2rem 0; left: 40%; transform: translateX(-40%); } .content--about img { display: block; margin-bottom: 1rem; } .page_wrapper { padding: 5rem 0; } }
 
 p { line-height: 1.33333; margin-bottom: 10px; }
 

@@ -12,6 +12,6 @@ Currently, I am interning at [Juspay](https://juspay.in/), a payments company in
 
 My interests are also aligned with my work, I'm currently researching generative music; a part of which I implemented at [HackInOut 2019](https://hackinout.co/), called [Rosaline](https://github.com/raghav-kukreti/rosaline). Parallel to this, I (used to) run a consultancy called [DeepFlowData](https://www.linkedin.com/company/deepflowdata/), which built data-centric solutions for pharmacovigilance applications.
 
-Apart from this, I also experiment with making music and graphics. I upload semi-frequently on my [SoundCloud](https://soundcloud.com/raghav-kukreti). All of my work, and media which I use frequently are listed in the side pane.
+Apart from this, I also experiment with making music and graphics. I upload semi-frequently on my SoundCloud under the moniker [KUK&#8377;ETI](https://soundcloud.com/raghav-kukreti). All of my work, and media which I use frequently are listed in the side pane.
 
 
