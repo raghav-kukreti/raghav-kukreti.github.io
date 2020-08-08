@@ -1,0 +1,21 @@
+---
+layout: default_no_footer
+---
+<section class="page_wrapper">
+	<section class="excerpts">
+		<h1 class="note_header">Notes</h1>
+
+		{% for note in site.notes %}
+
+		<div class="excerpt">
+			<h1 class="note--title">{{note.title}}</h5>
+			<h4 class="note--sub">{{note.meta}} by {{note.author}}</h4>
+
+			{{note.content}}
+
+		</div>
+		<a href="{{note.url}}">Read more...</a>
+
+		{% endfor %}
+	</section>
+</section>

@@ -5,7 +5,7 @@ permalink: /about/
 currently: Working on RShiny, Wrapping up the blog, Expanding DeepFlow, SoTA Packages in Julia
 ---
 
-
+![image](/assets/img/me.jpg)
 Hi, my name's Raghav Kukreti, I'm a final-year CSE undergrad at IIIT Delhi.
 
 Currently, I am interning at [Juspay](https://juspay.in/), a payments company in Bangalore. My work there includes working on Data (R, Julia, Python), the Web (Purescript, RShiny) and Design (Sketch).
