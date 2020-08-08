@@ -27,7 +27,7 @@ baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://raghav-kukreti.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: RaghavKukreti
 github_username:  raghav-kukreti
-
+permalink: pretty
 collections:
   posts:
     output: true
