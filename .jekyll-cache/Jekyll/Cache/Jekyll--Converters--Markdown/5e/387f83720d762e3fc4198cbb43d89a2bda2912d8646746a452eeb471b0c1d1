@@ -1,0 +1,7 @@
+I"<p>Recently I had (still going) the opportunity to work with a Dashboard framework written in R, but with the interactivity, design of high performant JavaScript SPAs. I was tasked with designing and building metric calculations, hybrid elements into it’s chart module.
+<!--more--></p>
+
+<p>This post will be a collection of notes and learnings regarding the project; a resource I can refer to when working on similar code-bases in the future.</p>
+
+<p>I’ll add incrementally once I have enough time to list out everything.</p>
+:ET
