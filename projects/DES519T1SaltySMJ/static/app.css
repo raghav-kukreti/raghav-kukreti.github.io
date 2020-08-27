@@ -2,5 +2,53 @@
 *::after,
 *::before {
 	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
+body {
+	font-weight: normal;
+	font-family: IBM Plex Mono;
+	background: #151616;
+	color: #e0e0e0;
+	line-height: 1.33333;
+}
+
+
+a {
+	color:#d02d55;
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-weight: normal;	
+}
+
+.centered {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.centered h1 {
+	margin-bottom: 10px;
+	font-size: 2rem;
+}
+.centered h1 span{
+	opacity: .6;
+}
+.centered h5 {
+	margin-bottom: 20px;
+	opacity: .8;
+	font-size: .8rem;
+}
+
+nav h1 {
+	font-family: IBM Plex Mono;
+	font-size: 1rem;
+	font-weight: normal;
+}
