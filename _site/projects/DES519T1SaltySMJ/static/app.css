@@ -1,0 +1,181 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+:root {
+	--color-black:#797a7e;
+	--color-light-text: #e0ece4;
+	--color-cream: #f7f2e7;
+	--color-cream-dark: #d8d3cd;
+
+}
+body {
+	font-weight: normal;
+	font-family: IBM Plex Mono;
+	/*background: var(--color-cream);*/
+	background: var(--color-cream) url('bg.svg') top center;
+	line-height: 1.33333;
+	color: var(--color-black);
+	/*background-color: #f7f2e7;*/
+
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 30%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+a {
+	color: var(--color-black);
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: .2px;
+	opacity: .8;
+	transition: all .25s ease-in-out;
+	padding-bottom: 2px;
+	border-bottom: 2px solid rgba(255, 255, 255, 0);
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: IBM Plex Mono;
+	font-weight: normal;	
+}
+.main {
+	height: 100vh;
+}
+
+.centered {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 40vmax;
+	transform: translate(-50%, -50%);
+	background: var(--color-cream);
+	border-radius: 10px;
+	box-shadow: 0 0 3px rgba(0,0,0,0.2);
+	padding: 3vmax;
+}
+.centered h1 {
+	margin-bottom: 10px;
+	font-size: 2rem;
+}
+.centered h1 span{
+	opacity: .6;
+}
+.centered h5 {
+	margin-bottom: 20px;
+	opacity: .8;
+	font-size: .8rem;
+}
+
+nav h1 {
+	font-family: IBM Plex Mono;
+	font-size: 1rem;
+	font-weight: normal;
+}
+
+
+.links {
+	margin-top: 40px;
+}
+
+.links ul li {
+	display: inline-block;
+	list-style-type: none;
+	margin-right: 2vmax;
+}
+
+a:hover {
+	opacity: 1;
+	border-bottom: 2px solid rgba(255, 255, 255, .2);
+}
+
+
+.aneesha  .img{
+	background: url('aneesha.jpeg') center center no-repeat;
+	background-size: cover;
+
+}
+.jasmine  .img{
+	background: url('jasmine.jpg') center center no-repeat;
+	background-size: cover;
+
+}
+.uwu .img{
+	background: url('uwu.jpg') bottom center no-repeat;
+	background-size: 150%;
+
+}
+.sirjan  .img{
+	background: url('sirjan.jpg') center center no-repeat;
+	background-size: cover;
+
+}
+.people-wrapper {
+	background: #f4f4f4;
+	padding: 5vmax 0;
+}
+.people {
+	position: relative;
+	margin: 0 auto;
+	display: grid;
+	width: 80%;
+	/*grid-gap: 1rem;*/
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	align-items: center;
+	justify-items: center;
+
+}
+
+.img {
+	height: 15vmax;
+	/*width: 15vmax;*/
+	border-radius: 10px;
+	/*filter: grayscale(.4);*/
+}
+
+.button {
+	opacity: 1 !important;
+	border: 1px solid;
+
+	padding: 0 10px;
+}
+
+
+.button:hover {
+	background: var(--color-cream-dark);
+	color: var(--color-black);
+	border: 1px solid;
+}
+
+.details {
+	margin: 20px 0;
+}
+
+.details h3{
+	font-size: 1rem;
+	text-transform: uppercase;
+	color: var(--color-black);
+	letter-spacing: -.2px;
+}
+
+.details a {
+	font-size: .8rem;
+	text-transform: lowercase;
+}
